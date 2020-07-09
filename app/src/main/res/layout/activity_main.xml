@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--TODO (1) Change the ConstraintLayout to a FrameLayout-->
+    <!--TODO (7) Remove the line that declares the id, we don't need it-->
+    <!--TODO (8) Wrap the TextView in a ScrollView-->
+    <!--TODO (9) Set the ScrollView width to match_parent and the height to wrap_content-->
+
+    <!--TODO (2) Change the TextView's android:id attribute to tv_weather_data-->
+    <!--TODO (3) Give the TextView 16dp of padding-->
+    <!--TODO (4) Set the text size to 20sp-->
+    <!--TODO (5) Remove all attributes with the word constraint in them-->
+    <!--TODO (6) Remove the default text from the TextView-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/progress"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:id="@+id/empty_data"
+        android:layout_gravity="center"
+        android:text="Something went Wrong!!"/>
+</FrameLayout>
